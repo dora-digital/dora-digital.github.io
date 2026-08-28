@@ -8,11 +8,11 @@
     <title>Dora Digital | IT Portfolio</title>
 
     <style>
-
-        /* ================================
+        /* =========================================
            DORA DIGITAL
-           Colour Palette #1
-           ================================ */
+           VERSION 2
+           EXISTING COLOUR PALETTE PRESERVED
+           ========================================= */
 
         :root {
             --sky-blue: #99CDD8;
@@ -25,11 +25,6 @@
             --white: #FFFFFF;
             --light-gray: #F7F7F4;
         }
-
-
-        /* ================================
-           GLOBAL
-           ================================ */
 
         * {
             margin: 0;
@@ -49,10 +44,7 @@
             color: inherit;
         }
 
-
-        /* ================================
-           NAVIGATION
-           ================================ */
+        /* NAVIGATION */
 
         nav {
             position: sticky;
@@ -66,7 +58,6 @@
             padding: 18px 8%;
 
             background: rgba(255, 255, 255, 0.96);
-
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
         }
 
@@ -95,10 +86,7 @@
             color: var(--sky-blue);
         }
 
-
-        /* ================================
-           HERO
-           ================================ */
+        /* HERO */
 
         .hero {
             min-height: 90vh;
@@ -126,7 +114,6 @@
 
             font-size: 0.8rem;
             font-weight: bold;
-
             letter-spacing: 4px;
             text-transform: uppercase;
 
@@ -144,27 +131,38 @@
 
         .hero h2 {
             max-width: 800px;
-
             margin-bottom: 25px;
 
             font-size: 1.5rem;
             font-weight: 500;
+            color: var(--dark-green);
+        }
 
+        .hero h2 .english-title {
+            display: block;
+            margin-top: 4px;
+        }
+
+        .hero h2 .training-line {
+            display: block;
+            margin-top: 4px;
+        }
+
+        .hero-name {
+            margin-bottom: 18px;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
             color: var(--dark-green);
         }
 
         .hero p {
             max-width: 700px;
-
             margin-bottom: 35px;
-
             font-size: 1.1rem;
         }
 
-
-        /* ================================
-           BUTTONS
-           ================================ */
+        /* BUTTONS */
 
         .button {
             display: inline-block;
@@ -192,10 +190,7 @@
             color: var(--dark-green);
         }
 
-
-        /* ================================
-           GENERAL SECTIONS
-           ================================ */
+        /* GENERAL SECTIONS */
 
         section {
             padding: 100px 10%;
@@ -208,12 +203,10 @@
 
         .section-title span {
             display: block;
-
             margin-bottom: 10px;
 
             font-size: 0.8rem;
             font-weight: bold;
-
             letter-spacing: 3px;
             text-transform: uppercase;
 
@@ -225,10 +218,7 @@
             color: var(--dark-green);
         }
 
-
-        /* ================================
-           ABOUT
-           ================================ */
+        /* ABOUT */
 
         .about {
             background: var(--white);
@@ -241,7 +231,6 @@
 
         .about-content h3 {
             margin-bottom: 20px;
-
             font-size: 1.8rem;
             color: var(--dark-green);
         }
@@ -250,19 +239,32 @@
             margin-bottom: 20px;
         }
 
+        .about-name {
+            margin-bottom: 28px;
+            padding: 18px 22px;
+
+            border-left: 5px solid var(--sky-blue);
+            border-radius: 0 14px 14px 0;
+
+            background: var(--soft-green);
+        }
+
+        .about-name strong {
+            display: block;
+            color: var(--dark-green);
+            font-size: 1.2rem;
+        }
+
         .strengths {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-
             margin-top: 35px;
         }
 
         .strength {
             padding: 25px;
-
             border-radius: 18px;
-
             background: var(--soft-green);
         }
 
@@ -271,10 +273,7 @@
             color: var(--dark-green);
         }
 
-
-        /* ================================
-           SKILLS
-           ================================ */
+        /* SKILLS */
 
         .skills {
             background: var(--cream);
@@ -282,24 +281,14 @@
 
         .skills-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 25px;
         }
 
         .skill-card {
             padding: 30px;
-
             border-radius: 20px;
-
             background: var(--white);
-
-            transition: 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
         }
 
         .skill-icon {
@@ -312,10 +301,19 @@
             color: var(--dark-green);
         }
 
+        .language-card {
+            margin-top: 30px;
+            padding: 25px 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.72);
+        }
 
-        /* ================================
-           PROJECTS
-           ================================ */
+        .language-card h3 {
+            margin-bottom: 8px;
+            color: var(--dark-green);
+        }
+
+        /* PROJECTS */
 
         .projects {
             background: var(--white);
@@ -323,9 +321,7 @@
 
         .projects-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 30px;
         }
 
@@ -333,12 +329,10 @@
             display: flex;
             flex-direction: column;
 
-            min-height: 370px;
-
+            min-height: 400px;
             padding: 35px;
 
             border-radius: 22px;
-
             background: var(--soft-green);
 
             transition: 0.3s ease;
@@ -353,7 +347,6 @@
 
             font-size: 0.8rem;
             font-weight: bold;
-
             letter-spacing: 2px;
 
             color: var(--dark-green);
@@ -361,9 +354,7 @@
 
         .project-card h3 {
             margin-bottom: 15px;
-
             font-size: 1.5rem;
-
             color: var(--dark-green);
         }
 
@@ -373,6 +364,7 @@
 
         .tags {
             margin-top: auto;
+            margin-bottom: 22px;
         }
 
         .tag {
@@ -382,16 +374,36 @@
             padding: 6px 12px;
 
             border-radius: 20px;
-
             background: var(--white);
 
             font-size: 0.8rem;
         }
 
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
 
-        /* ================================
-           EDUCATION
-           ================================ */
+        .project-link {
+            display: inline-block;
+            padding: 8px 13px;
+
+            border-radius: 20px;
+
+            background: var(--dark-green);
+            color: var(--white);
+
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            opacity: 0.88;
+        }
+
+        /* EDUCATION */
 
         .education {
             background: var(--cream);
@@ -414,7 +426,6 @@
 
         .timeline-year {
             margin-bottom: 10px;
-
             font-weight: bold;
             color: var(--dark-green);
         }
@@ -424,10 +435,21 @@
             color: var(--dark-green);
         }
 
+        .current-status {
+            margin: 0 auto 35px;
+            max-width: 900px;
 
-        /* ================================
-           CERTIFICATIONS
-           ================================ */
+            padding: 22px 28px;
+
+            border-radius: 18px;
+            background: var(--soft-green);
+        }
+
+        .current-status strong {
+            color: var(--dark-green);
+        }
+
+        /* CERTIFICATIONS */
 
         .certifications {
             background: var(--white);
@@ -435,19 +457,14 @@
 
         .cert-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 25px;
         }
 
         .cert-card {
             padding: 30px;
-
             border-radius: 20px;
-
             text-align: center;
-
             background: var(--soft-green);
         }
 
@@ -461,10 +478,7 @@
             color: var(--dark-green);
         }
 
-
-        /* ================================
-           WHY ME
-           ================================ */
+        /* WHY ME */
 
         .why-me {
             background:
@@ -477,17 +491,13 @@
 
         .why-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 25px;
         }
 
         .why-card {
             padding: 30px;
-
             border-radius: 20px;
-
             background: rgba(255, 255, 255, 0.75);
         }
 
@@ -496,14 +506,10 @@
             color: var(--dark-green);
         }
 
-
-        /* ================================
-           CONTACT
-           ================================ */
+        /* CONTACT */
 
         .contact {
             text-align: center;
-
             background: var(--dark-green);
             color: var(--white);
         }
@@ -515,18 +521,14 @@
 
         .contact p {
             max-width: 650px;
-
             margin: 0 auto 30px;
         }
 
         .contact-links {
             display: flex;
-
             justify-content: center;
             flex-wrap: wrap;
-
             gap: 15px;
-
             margin-top: 30px;
         }
 
@@ -534,7 +536,6 @@
             display: inline-block;
 
             padding: 14px 28px;
-
             border-radius: 30px;
 
             background: var(--white);
@@ -550,30 +551,42 @@
             transform: translateY(-3px);
         }
 
+        /* FOLLOW THE JOURNEY */
 
-        /* ================================
-           FOOTER
-           ================================ */
+        .journey {
+            text-align: center;
+            background: var(--soft-green);
+        }
+
+        .journey-content {
+            max-width: 720px;
+            margin: auto;
+        }
+
+        .journey-content h2 {
+            margin-bottom: 15px;
+            color: var(--dark-green);
+        }
+
+        .journey-content p {
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
 
         footer {
             padding: 25px;
-
             text-align: center;
 
             background: #4F5952;
-
             color: var(--white);
 
             font-size: 0.9rem;
         }
 
-
-        /* ================================
-           MOBILE
-           ================================ */
+        /* MOBILE */
 
         @media (max-width: 900px) {
-
             nav {
                 flex-direction: column;
                 gap: 15px;
@@ -594,12 +607,9 @@
             .strengths {
                 grid-template-columns: 1fr;
             }
-
         }
 
-
         @media (max-width: 600px) {
-
             section {
                 padding: 70px 7%;
             }
@@ -619,66 +629,29 @@
             .button {
                 margin-bottom: 10px;
             }
-
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-    <!-- ================================
-         NAVIGATION
-         ================================ -->
+    <!-- NAVIGATION -->
 
     <nav>
-
-        <a href="#home" class="logo">
-            Dora Digital
-        </a>
+        <a href="#home" class="logo">Dora Digital</a>
 
         <ul>
-
-            <li>
-                <a href="#home">Home</a>
-            </li>
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#certifications">Certifications</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
-
-
-    <!-- ================================
-         HOME
-         ================================ -->
+    <!-- HOME -->
 
     <section class="hero" id="home">
 
@@ -692,16 +665,19 @@
                 Hi, I'm Dora.
             </h1>
 
+            <div class="hero-name">
+                Dorathy Godwin Ogbuh
+            </div>
+
             <h2>
-                Fachinformatikerin für Systemintegration<br>
-    <span>(IT Specialist – System Integration)</span><br>
-    in training
+                Fachinformatikerin für Systemintegration
+                <span class="english-title">(IT Specialist - System Integration)</span>
+                <span class="training-line">in training</span>
             </h2>
 
             <p>
-                I'm building my career in IT with a focus on
-                systems, networking, infrastructure and
-                practical problem-solving.
+                I'm building my career in IT with a focus on systems,
+                networking, infrastructure and practical problem-solving.
             </p>
 
             <a href="#projects" class="button">
@@ -716,26 +692,24 @@
 
     </section>
 
-
-
-    <!-- ================================
-         ABOUT
-         ================================ -->
+    <!-- ABOUT -->
 
     <section class="about" id="about">
 
         <div class="section-title">
-
-            <span>01 — About</span>
+            <span>01 About</span>
 
             <h2>
                 From Aviation to IT
             </h2>
-
         </div>
 
-
         <div class="about-content">
+
+            <div class="about-name">
+                <strong>Dorathy Godwin Ogbuh</strong>
+                Dora Digital
+            </div>
 
             <h3>
                 A career built around systems,
@@ -743,84 +717,50 @@
             </h3>
 
             <p>
-                I'm currently completing a Umschulung in Germany
-                to become a Fachinformatikerin für Systemintegration
-                (IT Specialist – System Integration).
+                Before IT, I spent four years as a flight attendant,
+                a job built entirely on procedure, checklists, and staying
+                composed when a flight doesn't go to plan. That mindset
+                transferred more directly to IT than I expected.
+                Troubleshooting a network fault isn't so different from
+                working through a pre-flight checklist under pressure.
+                You follow the process, you don't skip steps, and you stay
+                calm while you find the cause.
             </p>
 
             <p>
-                Before moving into IT, I worked for four years
-                as a Flight Attendant in Nigeria.
+                I started my Umschulung (retraining) to become a
+                Fachinformatikerin für Systemintegration in January 2026,
+                and I'm documenting the whole transition publicly as Dora
+                Digital, partly to hold myself accountable and partly
+                because I know other career-changers are asking the same
+                questions I had a year ago.
             </p>
-
-            <p>
-                My aviation career taught me the importance of
-                procedures, communication, teamwork, responsibility,
-                documentation and staying calm when things don't
-                go according to plan.
-            </p>
-
-            <p>
-                I'm now applying those same principles to technology
-                and building my practical IT skills step by step.
-            </p>
-
 
             <div class="strengths">
 
                 <div class="strength">
-
                     <h4>
-                        🧩 Structured Problem-Solving
+                        🧩 Structured troubleshooting
                     </h4>
 
                     <p>
-                        I approach problems systematically and
-                        work toward practical solutions.
+                        Trained to isolate a fault by checking the most
+                        likely cause first, not guessing randomly. Applied
+                        directly in my Cisco Packet Tracer labs and
+                        DHCP/DNS troubleshooting exercises.
                     </p>
-
                 </div>
 
-
                 <div class="strength">
-
                     <h4>
-                        🛡️ Safety & Process Awareness
+                        ✈️ Working under real pressure
                     </h4>
 
                     <p>
-                        My aviation background taught me to respect
-                        procedures, reliability and responsibility.
+                        Four years handling in-flight situations taught me
+                        the difference between "urgent" and "actually
+                        critical", a skill that matters in IT support triage.
                     </p>
-
-                </div>
-
-
-                <div class="strength">
-
-                    <h4>
-                        🤝 Communication & Teamwork
-                    </h4>
-
-                    <p>
-                        Clear communication and collaboration are
-                        skills I developed throughout my career.
-                    </p>
-
-                </div>
-
-
-                <div class="strength">
-
-                    <h4>
-                        📚 Continuous Learning
-                    </h4>
-
-                    <p>
-                        I enjoy learning new technologies and
-                        turning theory into practical work.
-                    </p>
-
                 </div>
 
             </div>
@@ -829,151 +769,106 @@
 
     </section>
 
-
-
-    <!-- ================================
-         SKILLS
-         ================================ -->
+    <!-- SKILLS -->
 
     <section class="skills" id="skills">
 
         <div class="section-title">
-
-            <span>02 — Skills</span>
+            <span>02 Skills</span>
 
             <h2>
                 IT Skills
             </h2>
-
         </div>
-
 
         <div class="skills-grid">
 
-
             <div class="skill-card">
+                <div class="skill-icon">🌐</div>
 
-                <div class="skill-icon">
-                    🌐
-                </div>
-
-                <h3>
-                    Networking
-                </h3>
+                <h3>Networking</h3>
 
                 <p>
-                    IPv4, subnetting, DNS, DHCP, VLANs,
-                    TCP/IP and networking fundamentals.
+                    IPv4, subnetting, DNS, DHCP, VLANs, TCP/IP
+                    and networking fundamentals.
                 </p>
-
             </div>
 
-
             <div class="skill-card">
+                <div class="skill-icon">🖥️</div>
 
-                <div class="skill-icon">
-                    🖥️
-                </div>
-
-                <h3>
-                    Systems
-                </h3>
+                <h3>Systems</h3>
 
                 <p>
-                    Windows, Linux, operating-system concepts,
+                    Windows, macOS, Linux, operating-system concepts,
                     system configuration and troubleshooting.
                 </p>
-
             </div>
 
-
             <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
 
-                <div class="skill-icon">
-                    ⚙️
-                </div>
-
-                <h3>
-                    Administration
-                </h3>
+                <h3>Administration</h3>
 
                 <p>
                     PowerShell, system administration concepts,
                     virtualization and technical documentation.
                 </p>
-
             </div>
 
-
             <div class="skill-card">
+                <div class="skill-icon">🔐</div>
 
-                <div class="skill-icon">
-                    🔐
-                </div>
-
-                <h3>
-                    IT Security
-                </h3>
+                <h3>IT Security</h3>
 
                 <p>
                     Cybersecurity fundamentals, security awareness,
                     data protection and secure IT practices.
                 </p>
-
             </div>
 
-
             <div class="skill-card">
+                <div class="skill-icon">💾</div>
 
-                <div class="skill-icon">
-                    💾
-                </div>
-
-                <h3>
-                    Data & Databases
-                </h3>
+                <h3>Data & Databases</h3>
 
                 <p>
-                    Database fundamentals, relational database
-                    concepts, data handling and backup concepts.
+                    Database fundamentals, relational database concepts,
+                    data handling and backup concepts.
                 </p>
-
             </div>
 
-
             <div class="skill-card">
+                <div class="skill-icon">📋</div>
 
-                <div class="skill-icon">
-                    📋
-                </div>
-
-                <h3>
-                    Documentation
-                </h3>
+                <h3>Documentation</h3>
 
                 <p>
                     Technical documentation, project planning,
                     structured communication and process thinking.
                 </p>
-
             </div>
 
+        </div>
 
+        <div class="language-card">
+            <h3>German</h3>
+
+            <p>
+                B2. Currently developing professional German
+                communication skills alongside my IT retraining.
+            </p>
         </div>
 
     </section>
 
-
-
-    <!-- ================================
-         PROJECTS
-         ================================ -->
+    <!-- PROJECTS -->
 
     <section class="projects" id="projects">
 
         <div class="section-title">
 
-            <span>03 — Projects</span>
+            <span>03 Projects</span>
 
             <h2>
                 Practical Work
@@ -981,9 +876,7 @@
 
         </div>
 
-
         <div class="projects-grid">
-
 
             <!-- PROJECT 01 -->
 
@@ -998,35 +891,48 @@
                 </h3>
 
                 <p>
-                    A practical IT workplace concept for an
-                    airport check-in environment, covering
-                    hardware, software, networking, security,
-                    documentation and operational requirements.
+                    An IT workplace project for a fictional airport
+                    check-in environment, covering requirements analysis,
+                    hardware and software selection, configuration, training,
+                    costs, security and project documentation.
                 </p>
 
                 <div class="tags">
+                    <span class="tag">Hardware</span>
+                    <span class="tag">Networking</span>
+                    <span class="tag">Security</span>
+                    <span class="tag">Documentation</span>
+                </div>
 
-                    <span class="tag">
-                        Hardware
-                    </span>
+                <div class="project-links">
 
-                    <span class="tag">
-                        Networking
-                    </span>
+                    <a
+                        href="projects/airport-workplace/Projektdokumentation_CheckIn_Arbeitsplatz_Dorathy_Ogbuh.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Dokumentation
+                    </a>
 
-                    <span class="tag">
-                        Security
-                    </span>
+                    <a
+                        href="projects/airport-workplace/Projektpraesentation_CheckIn_Arbeitsplatz_Dorathy_Ogbuh.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Präsentation
+                    </a>
 
-                    <span class="tag">
-                        Documentation
-                    </span>
+                    <a
+                        href="projects/airport-workplace/README.md"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        README
+                    </a>
 
                 </div>
 
             </div>
-
-
 
             <!-- PROJECT 02 -->
 
@@ -1042,34 +948,38 @@
 
                 <p>
                     A database project focused on Flight Attendant
-                    Training and Certification, using database
-                    modelling and relational database concepts
-                    to represent structured information.
+                    Training and Certification, using database modelling,
+                    relational database concepts and structured information.
                 </p>
 
                 <div class="tags">
+                    <span class="tag">Database</span>
+                    <span class="tag">ER Model</span>
+                    <span class="tag">Relational Database</span>
+                    <span class="tag">Aviation</span>
+                </div>
 
-                    <span class="tag">
-                        Database
-                    </span>
+                <div class="project-links">
 
-                    <span class="tag">
-                        ER Model
-                    </span>
+                    <a
+                        href="projects/data-bank/Database_Design_Flight_Attendant_Training_Certification_Dorathy_Ogbuh.pdf"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Project PDF
+                    </a>
 
-                    <span class="tag">
-                        Relational Database
-                    </span>
-
-                    <span class="tag">
-                        Aviation
-                    </span>
+                    <a
+                        href="projects/data-bank/README.md"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        README
+                    </a>
 
                 </div>
 
             </div>
-
-
 
             <!-- PROJECT 03 -->
 
@@ -1084,36 +994,40 @@
                 </h3>
 
                 <p>
-                    A desktop productivity companion built from
-                    scratch using Python and PySide6. The project
-                    explores desktop application development,
-                    user interaction, application states and
-                    event-driven behaviour.
+                    A desktop productivity companion built from scratch
+                    using Python and PySide6. The project explores desktop
+                    application development, user interaction, application
+                    states and event-driven behaviour.
                 </p>
 
                 <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PySide6</span>
+                    <span class="tag">PyInstaller</span>
+                    <span class="tag">Desktop Application</span>
+                </div>
 
-                    <span class="tag">
-                        Python
-                    </span>
+                <div class="project-links">
 
-                    <span class="tag">
-                        PySide6
-                    </span>
+                    <a
+                        href="projects/project-chic/README.md"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        README
+                    </a>
 
-                    <span class="tag">
-                        PyInstaller
-                    </span>
-
-                    <span class="tag">
-                        Desktop Application
-                    </span>
+                    <a
+                        href="projects/project-chic/ProjectChic.exe"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Download App
+                    </a>
 
                 </div>
 
             </div>
-
-
 
             <!-- PROJECT 04 -->
 
@@ -1128,49 +1042,43 @@
                 </h3>
 
                 <p>
-                    This website is itself a project. I'm building
-                    it from scratch while developing my understanding
-                    of HTML, CSS, web design and GitHub.
+                    This website is itself a project. I'm building it
+                    from scratch while developing my understanding of
+                    HTML, CSS, web design and GitHub Pages.
                 </p>
 
                 <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Web</span>
+                </div>
 
-                    <span class="tag">
-                        HTML
-                    </span>
+                <div class="project-links">
 
-                    <span class="tag">
-                        CSS
-                    </span>
-
-                    <span class="tag">
+                    <a
+                        href="https://github.com/dora-digital/dora-digital.github.io"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         GitHub
-                    </span>
-
-                    <span class="tag">
-                        Web
-                    </span>
+                    </a>
 
                 </div>
 
             </div>
 
-
         </div>
 
     </section>
 
-
-
-    <!-- ================================
-         EDUCATION
-         ================================ -->
+    <!-- EDUCATION -->
 
     <section class="education" id="education">
 
         <div class="section-title">
 
-            <span>04 — Education</span>
+            <span>04 Education</span>
 
             <h2>
                 Education & Journey
@@ -1178,37 +1086,42 @@
 
         </div>
 
+        <div class="current-status">
+
+            <strong>Currently:</strong>
+            Preparing for my upcoming practical phase (Praktikum)
+            as part of my Fachinformatikerin für Systemintegration
+            Umschulung (retraining), expected November 2026.
+
+        </div>
 
         <div class="timeline">
-
 
             <div class="timeline-item">
 
                 <div class="timeline-year">
-                    2026 – 2028
+                    2026 - 2028
                 </div>
 
                 <h3>
                     Fachinformatikerin für Systemintegration
                     <br>
-                    (IT Specialist – System Integration)
+                    (IT Specialist - System Integration)
                 </h3>
 
                 <p>
-                    Currently completing my Umschulung in Germany,
-                    developing practical knowledge in IT systems,
-                    networking, operating systems, databases,
-                    security and system administration.
+                    Currently completing my Umschulung (retraining) in
+                    Germany, developing practical knowledge in IT systems,
+                    networking, operating systems, databases, security
+                    and system administration.
                 </p>
 
             </div>
 
-
-
             <div class="timeline-item">
 
                 <h3>
-                    Bachelor of Arts — Linguistics
+                    Bachelor of Arts - Linguistics
                 </h3>
 
                 <p>
@@ -1219,8 +1132,6 @@
 
             </div>
 
-
-
             <div class="timeline-item">
 
                 <h3>
@@ -1228,31 +1139,25 @@
                 </h3>
 
                 <p>
-                    Four years of professional experience as a
-                    Flight Attendant in Nigeria, developing strong
-                    skills in safety procedures, communication,
-                    teamwork, customer service and working under
-                    pressure.
+                    Four years of professional experience as a Flight
+                    Attendant in Nigeria, developing strong skills in
+                    safety procedures, communication, teamwork, customer
+                    service and working under pressure.
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
-
-
-    <!-- ================================
-         CERTIFICATIONS
-         ================================ -->
+    <!-- CERTIFICATIONS -->
 
     <section class="certifications" id="certifications">
 
         <div class="section-title">
 
-            <span>05 — Certifications</span>
+            <span>05 Certifications</span>
 
             <h2>
                 Certifications
@@ -1260,15 +1165,11 @@
 
         </div>
 
-
         <div class="cert-grid">
-
 
             <div class="cert-card">
 
-                <div class="cert-icon">
-                    🎓
-                </div>
+                <div class="cert-icon">🎓</div>
 
                 <h3>
                     Google IT Support
@@ -1280,12 +1181,9 @@
 
             </div>
 
-
             <div class="cert-card">
 
-                <div class="cert-icon">
-                    🔐
-                </div>
+                <div class="cert-icon">🔐</div>
 
                 <h3>
                     IBM Cybersecurity Fundamentals
@@ -1297,12 +1195,9 @@
 
             </div>
 
-
             <div class="cert-card">
 
-                <div class="cert-icon">
-                    🌐
-                </div>
+                <div class="cert-icon">🌐</div>
 
                 <h3>
                     Cisco IT Customer Support Basics
@@ -1314,22 +1209,17 @@
 
             </div>
 
-
         </div>
 
     </section>
 
-
-
-    <!-- ================================
-         WHY WORK WITH ME
-         ================================ -->
+    <!-- WHAT I BRING -->
 
     <section class="why-me">
 
         <div class="section-title">
 
-            <span>06 — What I Bring</span>
+            <span>06 What I Bring</span>
 
             <h2>
                 Why Work With Me?
@@ -1337,9 +1227,7 @@
 
         </div>
 
-
         <div class="why-grid">
-
 
             <div class="why-card">
 
@@ -1348,13 +1236,11 @@
                 </h3>
 
                 <p>
-                    I actively build my knowledge beyond the
-                    classroom and turn what I learn into
-                    practical work.
+                    I actively build my knowledge beyond the classroom
+                    and turn what I learn into practical work.
                 </p>
 
             </div>
-
 
             <div class="why-card">
 
@@ -1363,12 +1249,11 @@
                 </h3>
 
                 <p>
-                    I enjoy understanding why something doesn't
-                    work and systematically finding a solution.
+                    I enjoy understanding why something doesn't work
+                    and systematically finding a solution.
                 </p>
 
             </div>
-
 
             <div class="why-card">
 
@@ -1378,28 +1263,22 @@
 
                 <p>
                     My aviation background taught me to respect
-                    procedures, systems, communication and
-                    reliability.
+                    procedures, systems, communication and reliability.
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
-
-
-    <!-- ================================
-         CONTACT
-         ================================ -->
+    <!-- CONTACT -->
 
     <section class="contact" id="contact">
 
         <div class="section-title">
 
-            <span>07 — Contact</span>
+            <span>07 Contact</span>
 
             <h2>
                 Let's Connect
@@ -1407,49 +1286,69 @@
 
         </div>
 
-
         <p>
-            I'm open to connecting with IT professionals,
-            recruiters and companies interested in emerging
-            IT talent.
+            I'm open to connecting with IT professionals, recruiters
+            and companies interested in emerging IT talent.
         </p>
-
 
         <div class="contact-links">
 
             <a
                 href="mailto:doratech.career@gmail.com"
                 class="contact-button">
-
                 Email Me
-
             </a>
-
-
-            <!--
-                REPLACE THE URL BELOW WITH YOUR
-                CUSTOM LINKEDIN PROFILE URL.
-            -->
 
             <a
                 href="https://www.linkedin.com/in/dorathy-godwin-ogbuh"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="contact-button">
-
                 LinkedIn
+            </a>
 
+            <a
+                href="Dorathy__Godwin_Ogbuh_CV.pdf"
+                class="contact-button"
+                target="_blank"
+                rel="noopener noreferrer">
+                View CV
             </a>
 
         </div>
 
     </section>
 
+    <!-- FOLLOW THE JOURNEY -->
 
+    <section class="journey">
 
-    <!-- ================================
-         FOOTER
-         ================================ -->
+        <div class="journey-content">
+
+            <h2>
+                Follow the Journey
+            </h2>
+
+            <p>
+                Dora Digital is where I document my transition from
+                aviation into IT, connecting the projects I build with the
+                real challenges, lessons and everyday reality of retraining
+                in Germany.
+            </p>
+
+            <a
+                href="https://www.instagram.com/dora_digital_/"
+                class="contact-button"
+                target="_blank"
+                rel="noopener noreferrer">
+                Instagram @dora_digital_
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
 
     <footer>
 
@@ -1460,7 +1359,5 @@
 
     </footer>
 
-
 </body>
-
 </html>
